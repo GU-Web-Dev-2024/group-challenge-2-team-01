@@ -31,11 +31,11 @@
              </div>
              <div>
                 <label for="description">Recipe Description:</label><br>
-                <textarea name="description" id="description" rows="3" cols="50" required></textarea>
+                <textarea name="description" id="description" rows="3" cols="50" minlength="10" required></textarea>
              </div>
              <div>
                 <label for="time">Prep Time: </label><br>
-                <input type="number" id="time" name="time" required>
+                <input type="number" id="time" name="time" min="0" max="300" required>
              </div>
              <div>
                 <label for="ingredients">List of Ingredients:</label><br>
