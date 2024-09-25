@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Group Challenge</title>
+        <style>
+            #container {
+                display: flex;
+                border: 1px green solid;
+                padding: 5px;
+                flex-direction: column;
+            }   
+            /* flex items */
+            #container > div {
+                padding: 10px;
+                border: 1px blue solid;
+            }
+   </style>
+    </head>
+    <body>
+        <form action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html" method="get" id="container">
+            <div>
+                <label for="name">Recipe Name:</label>
+                <input type="text" name="name" id="name" required>
+             </div>
+             <div>
+                <label for="description">Recipe Description:</label>
+                <textarea name="description" id="description" rows="3" cols="50" required></textarea>
+             </div>
+             <div>
+                <label for="time">Prep Time: </label>
+                <input type="number" id="time" name="time" required>
+             </div>
+             <div>
+                <label for="ingredients">List of Ingredients:</label>
+                <input type="text" name="ingredients" id="ingredients" required>
+             </div>
+             <div>
+                <label for="instructions">Cooking Instructions:</label>
+                <input type="text" name="instructions" id="instructions" required>
+             </div>
+             <div>
+                <label for="recipe">Image of Recipe:</label>
+                <input type="file" name="recipe" id="recipe" required>
+             </div>
+             <div>
+                <input type="submit">
+             </div>
+        </form>
+    </body>
+</html>
