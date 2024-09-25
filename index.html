@@ -7,45 +7,51 @@
         <style>
             #container {
                 display: grid;
-                border: 1px green solid;
-                padding: 5px;
+                border: 5px lavender solid;
+                padding: 15px;
+                width: 700px;
+                background-color: lightblue;
+                vertical-align: middle;
+                gap: 20px;
             }   
             /* flex items */
             #container > div {
                 padding: 10px;
-                border: 1px blue solid;
+                border: 1px maroon solid;
+                background-color: white;
             }
    </style>
     </head>
     <body>
         <form action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html" method="get" id="container">
+            <h2 style="text-align: center;">Recipe Submission!</h2>
             <div>
-                <label for="name">Recipe Name:</label>
+                <label for="name">Recipe Name:</label><br>
                 <input type="text" name="name" id="name" required>
              </div>
              <div>
-                <label for="description">Recipe Description:</label>
+                <label for="description">Recipe Description:</label><br>
                 <textarea name="description" id="description" rows="3" cols="50" required></textarea>
              </div>
              <div>
-                <label for="time">Prep Time: </label>
+                <label for="time">Prep Time: </label><br>
                 <input type="number" id="time" name="time" required>
              </div>
              <div>
-                <label for="ingredients">List of Ingredients:</label>
+                <label for="ingredients">List of Ingredients:</label><br>
                 <input type="text" name="ingredients" id="ingredients" required>
              </div>
              <div>
-                <label for="instructions">Cooking Instructions:</label>
+                <label for="instructions">Cooking Instructions:</label><br>
                 <input type="text" name="instructions" id="instructions" required>
              </div>
              <div>
-                <label for="recipe">Image of Recipe:</label>
+                <label for="recipe">Image of Recipe:</label><br>
                 <input type="file" name="recipe" id="recipe" required>
              </div>
-             <div>
-                <input type="submit">
-             </div>
+             <button style="width: 50px; background-color: lavender;">
+                Submit
+            </button>
         </form>
     </body>
 </html>
